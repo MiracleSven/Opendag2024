@@ -1,0 +1,226 @@
+/* Reset styles for better cross-browser consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply a smooth scroll behavior to all HTML elements */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Define font faces for your custom fonts */
+@font-face {
+  font-family: 'Fellix Regular';
+  src: url(../fonts/Fellix-regular.woff);
+}
+
+@font-face {
+  font-family: 'Fellix Bold';
+  src: url(../fonts/Fellix-Bold.woff);
+}
+
+/* Base styles for the body */
+body {
+  background-image: url("../img/bg.jpg");
+  background-repeat: repeat;
+  background-size: contain;
+  background-color: rgb(49, 49, 49);
+  font-family: 'Fellix Regular', sans-serif;
+  color: #FFFFFF;
+  line-height: 1.6;
+}
+
+/* Header styles */
+
+/* Add margin between header/nav and the wrapper/container */
+header {
+  background-color: #fc3232;
+  padding: 16px;
+  text-align: center;
+  margin-bottom: 100px; /* Add margin to create space */
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align text to the left */
+  margin-left: 50px; /* Add margin to move text to the left */
+}
+
+
+
+header img {
+  width: 28px;
+  height: 24px;
+}
+
+header a {
+  text-decoration: none;
+  font-weight: medium;
+  font-size: 18px;
+  color: #ffffff;
+  margin: 0 20px;
+}
+
+header span {
+  font-family: 'Fellix Bold';
+  font-size: 36px;
+  margin-left: 8px;
+}
+
+/* Wrapper styles */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Main content styles */
+.main {
+  background-color: #fc3232;
+  max-width: 1080px;
+  padding: 20px;
+  border-radius: 20px 20px 0px 0px;
+  text-align: center;
+}
+
+.main h1 {
+  font-family: 'Fellix Bold';
+  font-size: 36px;
+  font-weight: medium;
+  margin: 50px 0;
+}
+
+.main h2 {
+  font-family: 'Fellix Bold';
+  font-size: 24px;
+  font-weight: medium;
+  margin: 15px 0;
+}
+
+/* Image styles */
+.img-mid {
+  margin-top: 40px;
+}
+
+.img-mid h1 {
+  font-family: 'Fellix Regular';
+  font-weight: bold;
+  font-size: 22px;
+  padding-bottom: 20px;
+}
+
+/* About section styles */
+.about {
+  max-width: 1050px;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about h2 {
+  font-family: 'Fellix Regular';
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.about p {
+  font-family: 'Fellix Regular';
+  font-weight: normal;
+  font-size: 22px;
+}
+
+/* Additional styles */
+.main img {
+  max-width: 100%;
+}
+
+.img1 {
+  font-family: 'Fellix Regular';
+  font-weight: medium;
+  font-size: 24px;
+  margin: 80px 0;
+}
+
+.curiologo {
+  max-width: 80%; /* Adjust the size as needed */
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+h3 {
+  font-family: 'Fellix Regular';
+  font-weight: bold;
+  font-size: 22px;
+  padding-bottom: 20px;
+}
+
+.column p {
+  font-family: 'Fellix Regular';
+  font-size: 18px;
+  padding-bottom: 20px;
+  padding-top: 0;
+}
+
+label {
+  font-family: 'Fellix Regular';
+  font-weight: normal;
+  font-style: italic;
+  font-size: 22px;
+}
+
+/* Grid for images */
+.gridpic {  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Ensure a 3-column layout */
+  gap: 5px;
+  grid-auto-flow: row;
+  border-radius: 5px;
+}
+
+.gridpic p {
+  margin-bottom: 15px;
+}
+
+
+/* Media Query for mobile devices */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header a {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .main {
+    margin-top: 200px;
+  }
+
+  .img-mid {
+    margin-top: 20px;
+  }
+
+  .about {
+    padding: 20px;
+  }
+
+  .curiologo {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .gridpic {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
